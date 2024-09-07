@@ -1,0 +1,180 @@
+body{
+    
+    background-color: #f7f1c8;
+}
+
+.login_box{
+    z-index: 100px;
+    border-radius: 0;
+    border: 2px solid #ff850200;
+    background-color: rgb(255, 255, 255);
+    margin-top: 4%;
+    text-align: left;
+    width: 35em;
+    height: 38em;
+}
+
+.row1{
+    color: #ff8602;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.col2{
+    text-align: left;
+}
+
+.logo{
+    height: 4em;
+    width: 5em;
+}
+
+.row2{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.row3{
+    color: rgb(83, 82, 82);
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.row3 input{
+    width: 450px;
+    border-radius: 0;
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.row4{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.row4 input{
+    width: 450px;
+    border-radius: 0;
+    padding: 8px;
+}
+
+.row5{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.row5 input{
+    width: 450px;
+    border-radius: 0;
+    margin-left: 10px;
+    padding: 8px;
+}
+
+.row6{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 20px;
+    padding-left: 10px;
+    
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=password]:hover{
+    box-shadow: 0 0 5pt 0.5pt #f7f1c8;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus{
+    box-shadow: 0 0 5pt 2pt #f7f1c8;
+    border: 1px solid #f4cca2;
+    outline-width: 0px;
+}
+
+p{
+    padding-top: 13px;
+}
+
+.btn_signin{
+    border: 3px solid #ff8602;
+    color: white;
+    background-color: #ff8602;
+    border-radius: 0;
+    width: 450px;
+    margin-left: 40px;
+    padding: 10px 10px 10px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.btn_signin:hover{
+    color: #ff8602;
+    background-color: #fff8cd00;
+    border: 3px solid #ff8602;
+
+}
+
+.img1{
+    position: absolute;
+    z-index: -100;
+    left: 10%;
+    top: 12%;
+}
+.img2{
+    position: absolute;
+    z-index: -1000;
+    left: 48%;
+    top: 12%;
+}
+
+.ellipse1{
+    position: absolute;
+    z-index: -102;
+    left: 76%;
+    top: 90%;
+    height: 3em;
+    width: 3em;
+}
+.ellipse2{
+    position: absolute;
+    z-index: -102;
+    left: 89%;
+    top: 20%;
+    height: 3em;
+    width: 3em;
+}
+
+.plane{
+    position: absolute;
+    z-index: -102;
+    left: 5.5%;
+    top: 26%;
+    height: 6em;
+    width: 7em;
+    transform: rotate(-10deg);
+    
+}
+
+.line1{
+    position: absolute;
+    z-index: -102;
+    left: 9%;
+    top: 37%;
+    height: 20em;
+    width: 10em;
+    transform: rotate(-10deg);
+}
+
+/* #toastBox{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+} */

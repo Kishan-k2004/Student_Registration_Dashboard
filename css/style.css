@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #9c5322;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 32%;
+    top: 0;
+    
+}
+
+main {
+    padding-top: 100px;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.input-container {
+    position: relative;
+    margin: 50px auto;
+    width: 200px;
+  }
+  
+  .input-container input[type="text"],
+  .input-container input[type="email"],
+  .input-container input[type="number"] {
+    font-size: 20px;
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid #9c532290;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #9c532290;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .input-container input[type="text"]:focus ~ .label,
+  .input-container input[type="text"]:valid ~ .label,
+  .input-container input[type="number"]:focus ~ .label,
+  .input-container input[type="number"]:valid ~ .label,
+  .input-container input[type="email"]:focus ~ .label,
+  .input-container input[type="email"]:valid ~ .label {
+    top: -20px;
+    font-size: 16px;
+    color: #7f4221;
+  }
+  
+  .input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 90%;
+    background-color: #7f4221;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+  }
+  
+  .input-container input[type="text"]:focus ~ .underline,
+  .input-container input[type="text"]:valid ~ .underline,
+  .input-container input[type="number"]:focus ~ .underline,
+  .input-container input[type="number"]:valid ~ .underline
+  .input-container input[type="email"]:focus ~ .underline,
+  .input-container input[type="email"]:valid ~ .underline {
+    transform: scaleX(1);
+  }
+  
+
+  button {
+    width: fit-content;
+    color: white;
+    min-width: 100px;
+    height: 45px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2.5px solid #ba7025;
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background-color: #ba7025;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+  }
+    
+  button:active {
+    transform: scale(0.95);
+  }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12%;
+    
+}
+
+table th, table td {
+    padding: 20px;
+    border: 1px solid #f6edcf;
+    text-align: center;
+}
+
+table th {
+    background-color: #dcac43;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f6edcf;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #fcf9ee;
+}
+
+table tbody tr:hover {
+    background-color: #ecd99b;
+}
+
+table tbody tr.selected {
+    background-color: #f6edcf;
+}
+
+.actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.actions .edit {
+    background: #4caf50;
+    color: white;
+}
+
+.actions .delete {
+    background: #f44336;
+    color: white;
+}
+
+.actions button:hover {
+    opacity: 0.8;
+}
+
+.parent{
+    position: fixed;
+    z-index: 1000;
+    top: 35px; 
+    width: 95%;
+    background-color: #fcf9ee;
+    box-shadow: 3px 4px 5px #dcac43;
+    border-radius: 15px;
+    margin: 10px;
+    padding-left: 10px;
+}
+.child{
+    flex: 20%;
+}
+
+.table{
+    margin-top: 8%;
+}
+
+.register-div{
+    position: fixed;
+    z-index: 1000;
+    top: 32%; 
+    width: 20%;
+    background-color: white;
+    box-shadow: 0px 0px 5px #dcac43;
+    border-radius: 155px;
+    margin-left: 38%;
+    padding-left: 10px;
+    text-align: center;
+    color: #7f4221;
+
+
+}
+
+#pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#pagination button:hover {
+    background-color: #ccc;
+}

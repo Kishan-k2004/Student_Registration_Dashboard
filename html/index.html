@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <main style="padding-top: 160px;">
+        <div id="parent" class="parent">
+            <form id="student-form">
+                <div class="input-container child">
+                    <input type="text" id="name" required="">
+                    <label for="input" class="label">Student's Name</label>
+                    <div class="underline"></div>
+                </div>
+                  
+                <div class="input-container child">
+                    <input type="number" id="age" required="">
+                    <label for="input" class="label">Student's Age</label>
+                    <div class="underline"></div>
+                </div>
+                  
+                <div class="input-container child">
+                    <input type="text" id="grade" required="">
+                    <label for="input" class="label">Student's Grade</label>
+                    <div class="underline"></div>
+                </div>
+                  
+                <div class="input-container child">
+                    <input type="email" id="email" required="">
+                    <label for="input" class="label">Student's Email</label>
+                    <div class="underline"></div>
+                </div>
+                  
+                <div class="child" style="flex: 8%; padding-top: 40px; padding-left: 10px;">
+                    
+                    <button type="submit" id="submit-button">Add Student</button>
+                </div>
+                
+            </form>
+        </div>
+        <section id="student-list-section" class="table">
+            <div class="register-div"><h2>Registered Students</h2></div>
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Grade</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/javascript/script.js"></script>
+</body>
+
+</html>

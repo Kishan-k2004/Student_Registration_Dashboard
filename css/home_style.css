@@ -1,0 +1,261 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff7cb;
+}
+
+/* top image */
+
+#bg_img{
+background-image: url('/assets/front_home.png');
+background-size: cover; /* Ensure the image covers the entire background */
+background-repeat: no-repeat; /* Prevent the image from repeating */
+background-position: center; /* Center the background image */
+width: 100%; /* Set the width of the div */
+height: 125vh; /* Set the height of the div to the full viewport height */
+}
+
+/* navbar */
+
+.column1{
+    background-color: white;
+    padding-right: 0px;
+}
+
+.column2{
+    padding-top: 30px;
+    text-align: center;
+    padding-left: 250px;
+}
+
+.logo{
+    align-items: center;
+}
+
+.home_nav{
+    position: absolute;
+    z-index: 10px;
+    top: 00px;
+}
+
+.container-fluid{
+    padding: 10px;
+}
+
+.nav-item{
+    margin-right: 58px;
+}
+
+.nav-link, .btn{
+    font-size: large;
+}
+
+.btn_login{
+    align-items: center;
+    border: 0;
+    background-color: rgba(255, 166, 0, 0);
+    margin-right: 60px;
+    font-size: large;
+    
+}
+
+/* join us button */
+
+.button {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    align-items: center;
+    border: 1px solid #ff8602;
+    background-color: #ff8602;
+}
+  
+.button, .button__icon, .button__text {
+    transition: all 0.3s;
+}
+  
+.button .button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+}
+  
+.button .button__icon {
+    position: absolute;
+    top: -0.5px;
+    transform: translateX(109px);
+    height: 50px;
+    width: 40px;
+    background-color: #ff8602;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.button .svg {
+    width: 30px;
+    stroke: #fff;
+    font-size: large;
+}
+  
+.button:hover {
+    background: #ff8602;
+}
+  
+.button:hover .button__text {
+    color: transparent;
+}
+  
+.button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+}
+  
+.button:active .button__icon {
+    background-color: #ff8602;
+}
+  
+.button:active {
+    border: 1px solid #ff8602;
+}
+
+/* front page content */
+
+.front_content{
+    position: absolute;
+    top: 250px;
+    left: 70px;
+}
+
+.front_h1{
+    font-size: 3em;
+    font-weight: 650;
+}
+
+.tagline{
+    font-size: 1em;
+    font-weight: 600;
+    color: #ff8602;
+}
+
+.col-6{
+    font-size: 1.2em;
+    color: rgb(74, 72, 72);
+}
+.row_button{
+    margin-top: 80px;
+}
+
+/* add button */
+
+.button1 {
+    background-color: #ff8602;
+    color: white;
+    width: 12em;
+    height: 3.5em;
+    border: #ff8602 0.2em solid;
+    border-radius: 0px;
+    text-align: right;
+    transition: all 0.6s ease;
+    margin-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+  
+.button1:hover {
+    background-color: #ffffff00;
+    cursor: pointer;
+    color: #ff8602;
+}
+  
+.button1 svg {
+    width: 1.6em;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    transition: all 0.2s ease;
+}
+  
+.button1:hover svg {
+    transform: translateX(5px);
+}
+  
+.text1 {
+    margin: 0 1.5em
+}
+
+/* button 2 */
+.button2 {
+    background-color: #ffffff00;
+    color: #ff8602;
+    width: 11em;
+    height: 3.5em;
+    border: #ff8602 0.2em solid;
+    border-radius: 0px;
+    text-align: right;
+    transition: all 0.6s ease;
+}
+  
+.button2:hover {
+    background-color: #ff8602;
+    cursor: pointer;
+    color: white;
+}
+  
+.button2 svg {
+    width: 1.6em;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    transition: all 0.2s ease;
+}
+  
+.button2:hover svg {
+    transform: translateX(5px);
+}
+  
+.text2 {
+    margin: 0 1.5em
+}
+
+.total_student{
+    position: absolute;
+    z-index: 200px;
+    top: 188px;
+    left: 86%;
+    width: 10%;
+
+}
+
+.head{
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.number{
+    color: rgb(96, 96, 96);
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+
+/* footer */
+
+footer{
+    background-color: #fff;
+    z-index: 290px;
+    width: 100%;
+    position: absolute;
+    top: 115%;
+    padding: 30px;
+}
+
+footer ul li{
+    margin-right: 30px;
+}
+
+footer div a{
+    margin-right: 30px;
+}
